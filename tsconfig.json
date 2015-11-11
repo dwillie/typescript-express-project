@@ -1,0 +1,44 @@
+{
+    "version": "1.7.2",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noLib": false,
+        "outDir": "./dist/"
+    },
+    "filesGlob": [
+        "./src/**/*.ts",
+        "./typings/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./src/controllers/icontroller.ts",
+        "./src/controllers/posts_controller.ts",
+        "./src/main.ts",
+        "./src/models/post.ts",
+        "./src/models/user.ts",
+        "./typings/body-parser/body-parser.d.ts",
+        "./typings/express/express.d.ts",
+        "./typings/mime/mime.d.ts",
+        "./typings/node/node.d.ts",
+        "./typings/serve-static/serve-static.d.ts",
+        "./typings/tsd.d.ts"
+    ],
+    "formatCodeOptions": {
+        "indentSize": 2,
+        "tabSize": 2,
+        "newLineCharacter": "\n",
+        "convertTabsToSpaces": true,
+        "insertSpaceAfterCommaDelimiter": true,
+        "insertSpaceAfterSemicolonInForStatements": true,
+        "insertSpaceBeforeAndAfterBinaryOperators": true,
+        "insertSpaceAfterKeywordsInControlFlowStatements": true,
+        "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+        "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+        "placeOpenBraceOnNewLineForFunctions": false,
+        "placeOpenBraceOnNewLineForControlBlocks": false
+    }
+}
