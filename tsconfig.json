@@ -18,8 +18,6 @@
         "./src/controllers/icontroller.ts",
         "./src/controllers/posts_controller.ts",
         "./src/main.ts",
-        "./src/models/post.ts",
-        "./src/models/user.ts",
         "./typings/body-parser/body-parser.d.ts",
         "./typings/express/express.d.ts",
         "./typings/mime/mime.d.ts",
