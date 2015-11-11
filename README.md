@@ -10,5 +10,5 @@ When you add new node packages you can install Typescript's type definitions wit
 
     tsd install <package> --save
   
-The `--save` parameter will automatically add it to your configs. This allows for rich autocompletetion if you have a plugin like https://github.com/TypeStrong/atom-typescript
+The `--save` parameter will automatically add it to your configs (so future `tsd install` calls include it). This allows for rich autocompletetion if you have a plugin like https://github.com/TypeStrong/atom-typescript
 
