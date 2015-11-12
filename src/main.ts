@@ -8,7 +8,7 @@ app.get("/", function(req, res) {
   res.send("Hello, World!");
 });
 
-import PostsController from "./controllers/posts_controller";
-new PostsController().registerRoutes(app);
+import RegisterRoutes from "./routes"
+RegisterRoutes(app);
 
 app.listen(3000);
