@@ -1,39 +1,41 @@
 import express = require("express");
-import PostsController from "./controllers/posts_controller";
 import ic = require("./controllers/controller_interfaces");
 
+import PostsController from "./controllers/posts_controller";
+
 export default function RegisterRoutes(app: express.Application) {
-  let postsRouter = express.Router();
-  registerIndex(postsRouter,  () => { return new PostsController() });
-  registerShow(postsRouter,   () => { return new PostsController() });
-  registerCreate(postsRouter, () => { return new PostsController() });
+  let postsRouter = new RouteMapping()
+    .index(PostsController)
+    .show(PostsController)
+    .create(PostsController)
+    .build();
   app.use("/posts", postsRouter);
 }
 
-function registerResource(router: express.Router, newController: () => ic.Resource) {
-  registerIndex(router, newController);
-  registerShow(router, newController);
-  registerCreate(router, newController);
-  registerUpdate(router, newController);
-  registerDestroy(router, newController);
-}
+class RouteMapping {
 
-function registerIndex(router: express.Router, newController: () => ic.Indexable) {
-  router.get("/", (req: express.Request, res: express.Response) => { newController().index(req, res) })
-}
+  router: express.Router;
 
-function registerShow(router: express.Router, newController: () => ic.Showable) {
-  router.get("/:id", (req: express.Request, res: express.Response) => { newController().show(req, res) })
-}
+  constructor() {
+    this.router = express.Router();
+  }
 
-function registerCreate(router: express.Router, newController: () => ic.Creatable) {
-  router.post("/", (req: express.Request, res: express.Response) => { newController().create(req, res) })
-}
+  public build(): express.Router {
+    return this.router;
+  }
 
-function registerUpdate(router: express.Router, newController: () => ic.Updatable) {
-  router.put("/:id", (req: express.Request, res: express.Response) => { newController().update(req, res) })
-}
+  public index(Controller: { new ():ic.Indexable}): RouteMapping {
+    this.router.get("/", (req: express.Request, res: express.Response) => { new Controller().index(req, res) });
+    return this;
+  }
 
-function registerDestroy(router: express.Router, newController: () => ic.Destroyable) {
-  router.delete("/", (req: express.Request, res: express.Response) => { newController().destroy(req, res) })
+  public show(Controller: { new ():ic.Showable}): RouteMapping {
+    this.router.get("/:id", (req: express.Request, res: express.Response) => { new Controller().show(req, res) });
+    return this;
+  }
+
+  public create(Controller: { new ():ic.Creatable}): RouteMapping {
+    this.router.post("/", (req: express.Request, res: express.Response) => { new Controller().create(req, res) });
+    return this;
+  }
 }
