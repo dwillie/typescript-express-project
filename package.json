@@ -2,7 +2,7 @@
   "name": "localfeed",
   "version": "1.0.0",
   "description": "Like facebook but with neighbours instead of friends",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
