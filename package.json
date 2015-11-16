@@ -1,7 +1,7 @@
 {
-  "name": "localfeed",
+  "name": "typescript-express-project",
   "version": "1.0.0",
-  "description": "Like facebook but with neighbours instead of friends",
+  "description": "Just a typescript-express-project boilerplate",
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
