@@ -16,5 +16,5 @@ Then just run
 
     gulp
 
-and you're built and watching for changes. In `dist/app.js` you'll see your compiled app. `node app.js` will start it up. We'll fix that sometime.
+and you're built and watching for changes. In `dist/` you'll see your compiled app. `node dist/src/main.js` will start it up. We'll fix that sometime.
 
