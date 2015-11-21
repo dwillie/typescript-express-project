@@ -11,7 +11,6 @@ gulp.task('scripts', function() {
 
   return tsProject.src()
     .pipe(ts(tsProject))
-    .pipe(concat('app.js'))
     .pipe(gulp.dest('./dist/'))
     .pipe(uglify())
     .pipe(rename({
