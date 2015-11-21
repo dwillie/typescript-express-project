@@ -17,7 +17,9 @@
     "files": [
         "./src/controllers/controller_interfaces.ts",
         "./src/controllers/posts_controller.ts",
+        "./src/database.ts",
         "./src/main.ts",
+        "./src/models/post.ts",
         "./src/routes.ts",
         "./typings/bluebird/bluebird.d.ts",
         "./typings/body-parser/body-parser.d.ts",
@@ -27,6 +29,7 @@
         "./typings/node/node.d.ts",
         "./typings/sequelize/sequelize.d.ts",
         "./typings/serve-static/serve-static.d.ts",
+        "./typings/sqlite3/sqlite3.d.ts",
         "./typings/tsd.d.ts",
         "./typings/validator/validator.d.ts"
     ],

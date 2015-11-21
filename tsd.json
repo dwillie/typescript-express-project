@@ -9,7 +9,7 @@
       "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
     },
     "node/node.d.ts": {
-      "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
+      "commit": "aed176536a202b9a2475ce1989ea6d2d0226a185"
     },
     "serve-static/serve-static.d.ts": {
       "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
@@ -21,16 +21,19 @@
       "commit": "421d6610bdb09e1015b71f5991d7a68d079eca21"
     },
     "sequelize/sequelize.d.ts": {
-      "commit": "8c4ec896ab619e7cb6572f82423e6e1eece70f5a"
+      "commit": "4f7b7e01d3a9622bfab0bef469e169529e60c66b"
     },
     "bluebird/bluebird.d.ts": {
-      "commit": "8c4ec896ab619e7cb6572f82423e6e1eece70f5a"
+      "commit": "4f7b7e01d3a9622bfab0bef469e169529e60c66b"
     },
     "lodash/lodash.d.ts": {
-      "commit": "8c4ec896ab619e7cb6572f82423e6e1eece70f5a"
+      "commit": "4f7b7e01d3a9622bfab0bef469e169529e60c66b"
     },
     "validator/validator.d.ts": {
-      "commit": "8c4ec896ab619e7cb6572f82423e6e1eece70f5a"
+      "commit": "4f7b7e01d3a9622bfab0bef469e169529e60c66b"
+    },
+    "sqlite3/sqlite3.d.ts": {
+      "commit": "aed176536a202b9a2475ce1989ea6d2d0226a185"
     }
   }
 }
