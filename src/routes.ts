@@ -4,12 +4,11 @@ import ic = require("./controllers/controller_interfaces");
 import PostsController from "./controllers/posts_controller";
 
 export default function RegisterRoutes(app: express.Application) {
-  let postsRouter = new RouteMapping()
+  app.use("/posts", new RouteMapping()
     .index(PostsController)
     .show(PostsController)
     .create(PostsController)
-    .build();
-  app.use("/posts", postsRouter);
+    .build());
 }
 
 class RouteMapping {
