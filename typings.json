@@ -1,0 +1,16 @@
+{
+  "name": "typescript-express-project",
+  "version": false,
+  "ambientDependencies": {
+    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#421d6610bdb09e1015b71f5991d7a68d079eca21",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#aed176536a202b9a2475ce1989ea6d2d0226a185",
+    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts#421d6610bdb09e1015b71f5991d7a68d079eca21",
+    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts#421d6610bdb09e1015b71f5991d7a68d079eca21",
+    "body-parser": "github:DefinitelyTyped/DefinitelyTyped/body-parser/body-parser.d.ts#421d6610bdb09e1015b71f5991d7a68d079eca21",
+    "sequelize": "github:DefinitelyTyped/DefinitelyTyped/sequelize/sequelize.d.ts#4f7b7e01d3a9622bfab0bef469e169529e60c66b",
+    "bluebird": "github:DefinitelyTyped/DefinitelyTyped/bluebird/bluebird.d.ts#4f7b7e01d3a9622bfab0bef469e169529e60c66b",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#4f7b7e01d3a9622bfab0bef469e169529e60c66b",
+    "validator": "github:DefinitelyTyped/DefinitelyTyped/validator/validator.d.ts#4f7b7e01d3a9622bfab0bef469e169529e60c66b",
+    "sqlite3": "github:DefinitelyTyped/DefinitelyTyped/sqlite3/sqlite3.d.ts#aed176536a202b9a2475ce1989ea6d2d0226a185"
+  }
+}

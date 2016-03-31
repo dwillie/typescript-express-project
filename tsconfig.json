@@ -21,17 +21,28 @@
         "./src/main.ts",
         "./src/models/post.ts",
         "./src/routes.ts",
-        "./typings/bluebird/bluebird.d.ts",
-        "./typings/body-parser/body-parser.d.ts",
-        "./typings/express/express.d.ts",
-        "./typings/lodash/lodash.d.ts",
-        "./typings/mime/mime.d.ts",
-        "./typings/node/node.d.ts",
-        "./typings/sequelize/sequelize.d.ts",
-        "./typings/serve-static/serve-static.d.ts",
-        "./typings/sqlite3/sqlite3.d.ts",
-        "./typings/tsd.d.ts",
-        "./typings/validator/validator.d.ts"
+        "./typings/browser.d.ts",
+        "./typings/browser/ambient/bluebird/index.d.ts",
+        "./typings/browser/ambient/body-parser/index.d.ts",
+        "./typings/browser/ambient/express/index.d.ts",
+        "./typings/browser/ambient/lodash/index.d.ts",
+        "./typings/browser/ambient/mime/index.d.ts",
+        "./typings/browser/ambient/node/index.d.ts",
+        "./typings/browser/ambient/sequelize/index.d.ts",
+        "./typings/browser/ambient/serve-static/index.d.ts",
+        "./typings/browser/ambient/sqlite3/index.d.ts",
+        "./typings/browser/ambient/validator/index.d.ts",
+        "./typings/main.d.ts",
+        "./typings/main/ambient/bluebird/index.d.ts",
+        "./typings/main/ambient/body-parser/index.d.ts",
+        "./typings/main/ambient/express/index.d.ts",
+        "./typings/main/ambient/lodash/index.d.ts",
+        "./typings/main/ambient/mime/index.d.ts",
+        "./typings/main/ambient/node/index.d.ts",
+        "./typings/main/ambient/sequelize/index.d.ts",
+        "./typings/main/ambient/serve-static/index.d.ts",
+        "./typings/main/ambient/sqlite3/index.d.ts",
+        "./typings/main/ambient/validator/index.d.ts"
     ],
     "formatCodeOptions": {
         "indentSize": 2,
@@ -46,5 +57,8 @@
         "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
         "placeOpenBraceOnNewLineForFunctions": false,
         "placeOpenBraceOnNewLineForControlBlocks": false
+    },
+    "atom": {
+        "rewriteTsconfig": true
     }
 }
